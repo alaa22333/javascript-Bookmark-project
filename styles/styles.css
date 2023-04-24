@@ -1,0 +1,151 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+  height: 100vh;
+  font-family: cursive;
+  background-image: linear-gradient(360deg,rgb(0 0 0 / 54%) 50%,rgb(97 97 104 / 78%)), url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 100%;
+background-position: top center;
+
+}
+
+
+/*add bookmark section */
+.add-bookmark {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: flex-start;
+    background: #e7edf3;
+    min-height: 31vh;
+    border-radius: 12px;
+    border-radius: 35px;
+    min-width: 38vw;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+.add-bookmark .nav {
+    display: flex;
+    width: 100%;
+    color: #fff;
+    border-radius: 14px;
+    padding-inline: 21px;
+    justify-content: space-between;
+    align-items: baseline;
+    background: rgb(52 136 162);
+}
+.add-bookmark .nav h1{
+    margin-bottom: 16px;
+
+}
+.nav i{font-size: 2rem;}
+/* form section */
+form {
+    display: flex;
+    padding: 26px;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+form label{
+    font-size: 1.25rem;
+    color: rgb(52, 136, 162);
+    /* margin-left: 16px; */
+
+}
+form input{
+    outline: rgb(52 136 162);
+    border: rgb(52 136 162 / 41%) solid 2.2px;
+    width: 97%;
+    height: 41px;
+    border-radius: 6px;
+    padding:5px
+}
+
+ form button {
+    -webkit-appearance: button;
+    font-size: 2rem;
+    width: 28%;
+    color: white;
+    background: rgb(52 136 162);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* bookmarks on screen */
+
+.bookmarks{
+    display: flex;
+    padding: 55px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    column-gap: 28px;
+    flex-wrap: wrap;}
+
+.bookmark ,.add-bookmark-btn {
+    background: rgb(0 0 0 / 40%);
+    width: 10rem;
+    height: 7rem;
+    border-radius: 10px;
+    /* display: flex; */
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.add-bookmark-btn{
+    margin: 24px auto;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 0;
+    align-items: center;
+    min-width: 293px;
+    color: rgb(52 136 162);
+    justify-content: center;
+}
+
+.bookmark a{
+    text-align: center;
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    width: 100%;
+    align-items: center;
+    color: rgb(150, 174, 180);
+    text-decoration: none;
+    column-gap: 7px;
+    text-transform: capitalize;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+a img{
+  max-width: 26px;
+    border-radius: 50%;
+}
+i{cursor: pointer;}
+.hide{
+    display:none
+}
