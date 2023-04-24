@@ -30,7 +30,7 @@ background-position: top center;
     min-height: 31vh;
     border-radius: 12px;
     border-radius: 35px;
-    min-width: 38vw;
+    width: 40%;
     -webkit-border-radius: ;
     -moz-border-radius: ;
     -ms-border-radius: ;
@@ -149,3 +149,8 @@ i{cursor: pointer;}
 .hide{
     display:none
 }
+@media only screen and (max-width: 1500px) {
+    .add-bookmark{
+       width:90% 
+    }
+  }
